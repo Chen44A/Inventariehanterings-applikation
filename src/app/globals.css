@@ -25,3 +25,166 @@ body {
     text-wrap: balance;
   }
 }
+
+/* BEM CSS for the components */
+
+/* Container and layout */
+.auth-form {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+}
+
+.auth-form__container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.auth-form__title {
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+/* Form */
+.auth-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form__label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.auth-form__input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.auth-form__input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* Error message */
+.auth-form__error {
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+/* Buttons */
+.auth-form__button {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-form__button--primary {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+}
+
+.auth-form__button--primary:hover {
+  background-color: #4f46e5;
+}
+
+.auth-form__button--secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+  border: none;
+  margin-top: 1rem;
+}
+
+.auth-form__button--secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* Text between buttons */
+.auth-form__text {
+  text-align: center;
+  color: #6b7280;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+
+/* Header */
+.header {
+  background-color: #ffffff; /* 白色背景 */
+  padding: 1rem 2rem; /* 内边距 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影 */
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4a90e2; /* 品牌颜色 - 蓝色 */
+  text-transform: uppercase;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header__nav-link--login {
+  background-color: #4a90e2; /* 蓝色背景 */
+  color: #ffffff;
+}
+
+.header__nav-link--login:hover {
+  background-color: #357abd; /* 蓝色变深 */
+}
+
+.header__nav-link--logout {
+  background-color: #d9534f; /* 红色背景 */
+  color: #ffffff;
+}
+
+.header__nav-link--logout:hover {
+  background-color: #c9302c; /* 红色变深 */
+}
